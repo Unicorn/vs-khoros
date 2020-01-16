@@ -2,7 +2,7 @@
 FreeMarker language colorization extension for Visual Studio Code. You can read more about FreeMarker [here](http://freemarker.incubator.apache.org/).
 
 ## Usage
-[Install](https://marketplace.visualstudio.com/items?itemName=dcortes92.FreeMarker) the extension and open any `.ftl` file.
+[Install](https://marketplace.visualstudio.com/items?itemName=Unicorn.Khoros) the extension and open any `.ftl` file.
 
 ![FreeMarker Syntax Highlight](/images/vscode-freemarker-syntax.png "FreeMarker Syntax Hightlight")
 

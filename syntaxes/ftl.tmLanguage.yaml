@@ -1,0 +1,106 @@
+fileTypes:
+  - ftl
+foldingStartMarker: "(?x)<@?.*>"
+foldingStopMarker: "(?x)<\/@?.*>"
+keyEquivalent: ^~F
+name: FreeMarker
+patterns:
+- {include: }
+repository:
+
+# patterns:
+#   -
+#     name: comment.block.ftl
+#     begin: '<#--'
+#     end: '-->'
+#     contentName: punctuation.definition.comment.ftl
+#   - 
+#     captures:
+#       begin: "<@liascript>"
+#       end: "</@liascript>"
+#       contentName: meta.embedded.block.javascript
+#       patterns:
+#         - {include: source.js}
+#   # -
+#   #   begin: '(^|\G)(\s*)(`{3,}|~{3,})\s*(?i:(javascript)((\s+|:|\{)[^`~]*)?$)'
+#   #   name: markup.fenced_code.block.markdown
+#   #   end: '(^|\G)(\2|\s{0,3})(\3)\s*$'
+#   #   beginCaptures:
+#   #     '3':
+#   #       name: punctuation.definition.markdown
+#   #     '4':
+#   #       name: fenced_code.block.language.markdown
+#   #     '5':
+#   #       name: fenced_code.block.language.attributes.markdown
+#   #   endCaptures:
+#   #     '3':
+#   #       name: punctuation.definition.markdown
+#   #   patterns:
+#   #     -
+#   #       begin: '(^|\G)(\s*)(.*)'
+#   #       while: '(^|\G)(?!\s*([`~]{3,})\s*$)'
+#   #       contentName: meta.embedded.block.javascript
+#   #       patterns:
+#   #         - {include: source.js}
+
+#   # -
+#   #   name: meta.function.ftl
+#   #   match: '([<\[]\/(#|@))(liascript)*)\s*([>\]])'
+#   #   captures:
+#   #     '1':
+#   #       name: punctuation.definition.function.ftl
+#   #     '2':
+#   #       name: punctuation.definition.function.ftl
+#   #     '3':
+#   #       name: entity.name.function.ftl
+#   #     '5':
+#   #       name: punctuation.definition.function.ftl
+#   #   patterns:
+#   #     -
+#   #       begin: '(^|\G)(\s*)(.*)'
+#   #       while: '(^|\G)(?!\s*(</@liascript>)\s*$)'
+#   #       contentName: meta.embedded.block.javascript
+#   #       patterns:
+#   #         - {include: source.js}
+#   -
+#     name: meta.function.ftl
+#     match: '([<\[](#|@))(\w+(\.\w+)*)((\s+[^>\]]+)*?)\s*((\/)?([>\]]))'
+#     captures:
+#       '1':
+#         name: punctuation.definition.function.ftl
+#       '2':
+#         name: punctuation.definition.function.ftl
+#       '3':
+#         name: entity.name.function.ftl
+#       '5':
+#         name: variable.parameter.function.ftl
+#       '8':
+#         name: entity.name.function.ftl
+#       '9':
+#         name: punctuation.definition.function.ftl
+#   -
+#     name: meta.function.ftl
+#     match: '([<\[]\/(#|@))(\w+(\.\w+)*)\s*([>\]])'
+#     captures:
+#       '1':
+#         name: punctuation.definition.function.ftl
+#       '2':
+#         name: punctuation.definition.function.ftl
+#       '3':
+#         name: entity.name.function.ftl
+#       '5':
+#         name: punctuation.definition.function.ftl
+#   -
+#     name: variable.other.readwrite.local.ftl
+#     match: '(\$\{)\.?[a-zA-Z_\(][\w\(\)+-\/\*]+(\.?[\w\(\)+-\/\*]+)*(.*?|\?\?|\!)?(\})'
+#     captures:
+#       '1':
+#         name: punctuation.definition.variable.ftl
+#       '3':
+#         name: entity.name.function.ftl
+#       '4':
+#         name: punctuation.definition.variable.ftl
+#   -
+#     include: text.html.basic
+scopeName: text.html.ftl
+uuid: C011BB07-875D-4DEB-9582-0E1FEC0D1E4E

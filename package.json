@@ -1,69 +1,78 @@
 {
-    "name": "FreeMarker",
-    "displayName": "FreeMarker",
-    "description": "Syntax highlight for FreeMarker",
-    "version": "0.0.9",
-    "publisher": "dcortes92",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dcortes92/vs-freemarker.git"
-    },
-    "engines": {
-        "vscode": "^0.10.1"
-    },
-    "categories": [
-        "Languages"
-    ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "ftl",
-                "aliases": [
-                    "FreeMarker",
-                    "ftl"
-                ],
-                "extensions": [
-                    ".ftl"
-                ],
-                "configuration": "./ftl.configuration.json"
-            }
+  "name": "khoros",
+  "displayName": "FreeMarker / Khoros",
+  "description": "Syntax highlight for FreeMarker and Khoros",
+  "version": "1.0.0",
+  "publisher": "Unicorn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Unicorn/vs-khoros.git"
+  },
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "ftl",
+        "aliases": [
+          "FreeMarker",
+          "ftl"
         ],
-        "grammars": [
-            {
-                "language": "ftl",
-                "scopeName": "text.html.ftl",
-                "path": "./syntaxes/ftl.tmLanguage"
-            }
+        "extensions": [
+          ".ftl"
         ],
-        "snippets": [
-            {
-                "language": "ftl",
-                "path": "./snippets/ftl.json"
-            },
-            {
-                "language": "ftl",
-                "path": "./snippets/html.json"
-            }
-        ]
-    },
-    "bugs": {
-        "url": "https://github.com/dcortes92/vs-freemarker/issues"
-    },
-    "homepage": "https://github.com/dcortes92/vs-freemarker#readme",
-    "dependencies": {},
-    "devDependencies": {},
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "visual",
-        "studio",
-        "code",
-        "vs",
-        "freemarker",
-        "ftl"
+        "configuration": "./ftl.configuration.json"
+      }
     ],
-    "author": "Daniel Cortes <dcortes1892@gmail.com> (http://dcortes92.github.io/)",
-    "license": "MIT",
-    "icon": "images/logo.svg"
+    "grammars": [
+      {
+        "language": "ftl",
+        "scopeName": "text.html.ftl",
+        "path": "./syntaxes/ftl.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "ftl",
+        "path": "./snippets/ftl.json"
+      },
+      {
+        "language": "ftl",
+        "path": "./snippets/html.json"
+      }
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/Unicorn/vs-freemarker/issues"
+  },
+  "homepage": "https://github.com/Unicorn/vs-freemarker#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "js-yaml": "^3.13.1"
+  },
+  "scripts": {
+    "build-yaml": "js-yaml syntaxes/ftl.tmLanguage.yaml > syntaxes/ftl.tmLanguage.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "visual",
+    "studio",
+    "code",
+    "vs",
+    "freemarker",
+    "ftl",
+    "khoros"
+  ],
+  "author": "Unicorn Agency <hello@unicornagency.com> (https://unicornagency.com)",
+  "license": "MIT",
+  "icon": "images/logo@1x.png",
+  "__metadata": {
+    "id": "9c03736a-6503-48ab-9f7a-42e970897c88",
+    "publisherDisplayName": "Unicorn",
+    "publisherId": "bb16b771-a865-4ee2-86ff-c3090312f3aa"
+  }
 }

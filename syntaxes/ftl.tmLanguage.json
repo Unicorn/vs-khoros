@@ -1,0 +1,91 @@
+{
+  "fileTypes": [
+    "ftl"
+  ],
+  "foldingStartMarker": "(?x)<@?.*>",
+  "foldingStopMarker": "(?x)</@?.*>",
+  "keyEquivalent": "^~F",
+  "name": "FreeMarker",
+  "patterns": [
+    {
+      "name": "comment.block.ftl",
+      "begin": "<#--",
+      "end": "-->",
+      "contentName": "punctuation.definition.comment.ftl"
+    },
+    {
+      "captures": {
+        "begin": "<@liascript>",
+        "end": "</@liascript>",
+        "contentName": "meta.embedded.block.javascript",
+        "patterns": [
+          {
+            "include": "source.js"
+          }
+        ]
+      }
+    },
+    {
+      "name": "meta.function.ftl",
+      "match": "([<\\[](#|@))(\\w+(\\.\\w+)*)((\\s+[^>\\]]+)*?)\\s*((\\/)?([>\\]]))",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.function.ftl"
+        },
+        "2": {
+          "name": "punctuation.definition.function.ftl"
+        },
+        "3": {
+          "name": "entity.name.function.ftl"
+        },
+        "5": {
+          "name": "variable.parameter.function.ftl"
+        },
+        "8": {
+          "name": "entity.name.function.ftl"
+        },
+        "9": {
+          "name": "punctuation.definition.function.ftl"
+        }
+      }
+    },
+    {
+      "name": "meta.function.ftl",
+      "match": "([<\\[]\\/(#|@))(\\w+(\\.\\w+)*)\\s*([>\\]])",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.function.ftl"
+        },
+        "2": {
+          "name": "punctuation.definition.function.ftl"
+        },
+        "3": {
+          "name": "entity.name.function.ftl"
+        },
+        "5": {
+          "name": "punctuation.definition.function.ftl"
+        }
+      }
+    },
+    {
+      "name": "variable.other.readwrite.local.ftl",
+      "match": "(\\$\\{)\\.?[a-zA-Z_\\(][\\w\\(\\)+-\\/\\*]+(\\.?[\\w\\(\\)+-\\/\\*]+)*(.*?|\\?\\?|\\!)?(\\})",
+      "captures": {
+        "1": {
+          "name": "punctuation.definition.variable.ftl"
+        },
+        "3": {
+          "name": "entity.name.function.ftl"
+        },
+        "4": {
+          "name": "punctuation.definition.variable.ftl"
+        }
+      }
+    },
+    {
+      "include": "text.html.basic"
+    }
+  ],
+  "scopeName": "text.html.ftl",
+  "uuid": "C011BB07-875D-4DEB-9582-0E1FEC0D1E4E"
+}
